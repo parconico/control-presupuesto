@@ -5,6 +5,7 @@ import ListadoGastos from "./components/ListadoGastos";
 import Modal from "./components/Modal";
 import IconoNuevoGasto from "./img/nuevo-gasto.svg";
 import { generarId } from "./helpers";
+import Footer from "./components/Footer";
 
 function App() {
   const [gastos, setGastos] = useState(
@@ -139,6 +140,9 @@ function App() {
           setGastoEditar={setGastoEditar}
         />
       )}
+      <div className="footer">
+        <Footer/>
+      </div>
     </div>
   );
 }
